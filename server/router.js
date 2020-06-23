@@ -3,8 +3,11 @@ const router = express.Router({ mergeParams: true });
 const { sendAll } = require('./controller.js')
 const { sendFiltered } = require('./controller.js')
 
-// router.get('/', sendAll);
+router.get('/', sendAll);
 
-router.get('/', sendFiltered)
+// ************************
+// Backend filtering
+// ************************
+// router.get('/', sendFiltered)
 
 module.exports = router;

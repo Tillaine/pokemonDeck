@@ -1,5 +1,6 @@
 .jumbotron {
     text-align: center;
+    align-content: center;
 }
 
 .pokeDexImg {
@@ -7,4 +8,54 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.filters{
+  color:rgb(184, 54, 14);
+}
+
+.filter{
+  width: 50%;
+}
+
+.noPokemone{
+  background-color: rgb(249, 224, 158);
+  align-items: center;
+  text-align: center;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.pokeImg {
+  margin: auto;
+}
+
+.card{
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.pokeCard {
+  background-color:  rgb(249, 224, 158);
+}
+
+.num{
+  font-size: .5em;
+  float: right;
+  color:rgb(184, 54, 14);
+}
+
+.search{
+  background-color:rgb(233, 236, 239);
+  border: none;
+
+}
+
+.nameSearch{
+  margin: 10px, 10px;
 }

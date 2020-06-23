@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { model } = require('mongoose');
+
 
 const searchedPokemon = (terms) =>  {
     return fetch('https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json')
@@ -20,6 +20,11 @@ const allPokemon = () => {
         .catch(err => console.log(err));
 
 }
+
+
+// ************************
+// Backend filtering
+// ************************
 const filterPokemon = (terms, pokemon) => {
     let results = pokemon;
     const { weakness, type, name } = terms;
