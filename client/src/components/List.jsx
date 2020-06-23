@@ -8,8 +8,8 @@ const List = (props) => {
            <div className="container ">
                 <div className='row'>                    
                     {props.fighters.map(pokemon => <Pokemon key={pokemon.num} pokemon={pokemon} />)}
-
                 </div>
+                    <button onClick={props.reset} className='btn btn-primary btn-sm'>Reset Filters</button>
                 </div>)
     } else {
         return (
@@ -17,9 +17,8 @@ const List = (props) => {
                     <div className="card noPokemone">
                         <img width='250px' src="https://www.mypokecard.com/my/galery/lGuoJnQqYMhl.jpg"/>
                         <h3>We have never seen that kind of pokemon. 🤔Try differnet filters. </h3>
-                        <button onClick={props.reset} className='btn btn-primary btn small'>Reset Filters</button>
+                        <button onClick={props.reset} className='btn btn-primary'>Reset Filters</button>
                 </div>
-                
             </div>
         )
 

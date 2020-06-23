@@ -4,15 +4,20 @@ class Pokemon extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        selected: false,
+        details: false,
       }
       this.handleClick = this.handleClick.bind(this)
       this.handleDetailClose = this.handleDetailClose.bind(this)
+      this.handleDetails = this.handleDetails.bind(this)
 
     }
 
     handleDetailClose() {
         this.setState({selected: false})
+    }
+
+    handleDetails() {
+        this.setState({selected: true})
     }
 
     handleClick(e) {
@@ -26,21 +31,16 @@ class Pokemon extends React.Component {
                 <div id={pokemon.name} className="card pokeCard">
                     <h3> {pokemon.name} <span className='num'>{pokemon.num}</span></h3>
                     <img className='pokeImg' width="75px" src={pokemon.img}/> 
+                    <div className='card detais'>
+                        <p className='typeDetails'> Type: {pokemon.type.join(', ')} </p>
+                        <p className='weaknessDetails'> Weakness: {pokemon.weaknesses.join(', ')} </p>
+                    </div>
                 </div>
             </div>
         )
     }
 }
 
-const Details = (props) => {
-    const { pokemon } = props;
-    return (
-        <div id={pokemon.name} className="card">
-                     <h1>{pokemon.name}</h1>
-                     <img width="150px" src={pokemon.img}/>
-                     
-                </div>
-    )
-}
+
 
 export default Pokemon;
