@@ -1,6 +1,21 @@
-const pokeTypes = ["NORMAL", "FIRE", "WATER", "ELECTRIC", "GRASS", "ICE", "FIGHTING", "POISON", "GROUND", "FLYING", "PSYCHIC", "BUG", "ROCK", "GHOST", "DRAGON", "DARK", "STEEL", "FAIRY"]
-
-
+const pokeTypes = ['Normal',
+'Fire',
+'Water',
+'Electric',
+'Grass',
+'Ice',
+'Fighting',
+'Poison',
+'Ground',
+'Flying',
+'Psychic',
+'Bug',
+'Rock',
+'Ghost',
+'Dragon',
+'Dark',
+'Steel',
+'Fairy' ]
 
 
 module.exports = pokeTypes
