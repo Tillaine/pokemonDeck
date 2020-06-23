@@ -6,7 +6,6 @@ const searchedPokemon = (terms) =>  {
         .then(res => res.text())
         .then(body => results = JSON.parse(body))
         .then(body => {
-            console.log(terms)
             const filteredPokemon = filterPokemon(terms, body.pokemon)
             return filteredPokemon;
         })

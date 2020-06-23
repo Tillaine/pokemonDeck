@@ -9,7 +9,7 @@ const sendAll = (req, res) => {
 }
 
 const sendFiltered = (req, res) => {
-    console.log('body', req.body)
+    console.log('body', req.params)
     searchedPokemon(req.body)
     .then(matchingPokemon => {
         res.send(matchingPokemon)})
