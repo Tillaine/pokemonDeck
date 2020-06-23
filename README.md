@@ -1,6 +1,6 @@
 # pokemonDeck 
 
-## Find the best pokemon for the fight fast. 
+## Find the best pokemon every battle. 
 
 Technologies: 
 - JSON-server
