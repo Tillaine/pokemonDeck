@@ -6,6 +6,7 @@ const searchedPokemon = (terms) =>  {
         .then(res => res.text())
         .then(body => results = JSON.parse(body))
         .then(body => {
+            console.log(terms)
             const filteredPokemon = filterPokemon(terms, body.pokemon)
             return filteredPokemon;
         })
@@ -42,8 +43,7 @@ const filterPokemon = (terms, pokemon) => {
     return results
 }
 
-const pokemon = fetchPokemon()
-.then(body => console.log('fetched', body))
 
 
-model.exports = { searchedPokemon, allPokemon }
+
+module.exports = { searchedPokemon, allPokemon }

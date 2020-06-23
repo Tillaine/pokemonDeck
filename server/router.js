@@ -3,8 +3,8 @@ const router = express.Router();
 const { sendAll } = require('./controller.js')
 const { sendFiltered } = require('./controller.js')
 
-router.get('/', sendAll);
+// router.get('/', sendAll);
 
-router.get('/pokemon', sendFiltered)
+router.get('/', sendFiltered)
 
 module.exports = router;
