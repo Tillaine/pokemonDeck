@@ -9,7 +9,7 @@ class App extends React.Component {
       super(props);
       this.state = {
         foundPokemon: [],
-        searched: true   
+        searched: false   
       } 
       this.handleSearch = this.handleSearch.bind(this);
     }
@@ -25,7 +25,9 @@ class App extends React.Component {
       console.log('url', url)
       fetch(url)
       .then(pokemon => pokemon.json())
-      .then(pokemon => console.log(pokemon))
+      .then(foundPokemon => {
+        this.setState({ foundPokemon, searched: true })
+        console.log(this.state)})
       .catch(err => console.log(err))
     }
   
@@ -34,7 +36,7 @@ class App extends React.Component {
         <div>
           <Header/>
           <Search handleSearch={this.handleSearch}/>
-          {/* <List fighters={this.state.foundPokemon}/> */}
+          <List searched={this.state.searched} fighters={this.state.foundPokemon}/>
             
         </div>
         )
