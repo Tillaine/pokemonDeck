@@ -18,7 +18,7 @@ Getting Started:
 - go to http://localhost:3000/ in your chrome browser
 - search by pokemon name or filter by type and weakness
 
-![](https://giphy.com/gifs/react-VIyzKddrxj0VHQWvzg)
+![](https://media.giphy.com/media/VIyzKddrxj0VHQWvzg/giphy.gif)
 
 <iframe src="https://giphy.com/embed/VIyzKddrxj0VHQWvzg" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/react-VIyzKddrxj0VHQWvzg">via GIPHY</a></p>
 
