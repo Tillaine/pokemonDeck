@@ -1,7 +1,7 @@
 # pokemonDeck 
 
 
-[Imgur](https://i.imgur.com/9WmjdST.png)
+![Imgur](https://i.imgur.com/9WmjdST.png)
 
 ## Find the best pokemon every battle. 
 
